@@ -1,0 +1,233 @@
+html {
+    color: #222;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0.2rem 0.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Theme colors */
+
+.red {
+    background-color: #7d2c15;
+}
+
+.blue {
+    background-color: #1d75b8;
+}
+
+.yellow {
+    background-color: #d6b14b;
+}
+
+.grey {
+    background-color: #5b626e;
+}
+
+
+/* Main navigation */
+
+.main-nav {
+    color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2em;
+}
+
+.main-logo img {
+    width: 1.8em;
+    height: 1.8em;
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+.main-logo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn {
+    margin: 0 0.2em;
+    padding: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 75%;
+}
+
+.main-nav p {
+    font-size: 1.5em;
+}
+
+video {
+    position: absolute;
+    /* border: 1px dotted blueviolet; */
+    top: -300px;
+    left: -1px;
+    z-index: -1;
+    filter: brightness(50%)
+}
+
+
+/* renter/landlord selection */
+.selection {
+    margin: 6em 0 0 10%;
+    font-size: 2em;
+    color: white
+}
+
+.selection > a {
+    text-transform: none;
+    display: block;
+}
+
+.selection .material-icons {
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+/* .selection > ::before{
+    content: url("../assets/icons/right-arrow.svg");
+    max-width: 1em;
+    max-height: 1em;
+    vertical-align: middle;
+} */
+
+/* Description */
+
+.house-sketch-background {
+    position: absolute;
+    top: 750px;
+    left: -50px;
+    opacity: 15%;
+    z-index: -2;
+}
+
+
+.description {
+    color: #5b626e;
+    max-width: 61rem;
+    margin: 18em auto 5em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.description h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+
+.description > p {
+    margin-top: 3em;
+}
+
+
+.emblems {
+    margin-top: 5.5em;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.emblem {
+    padding: 1.2em;
+    max-width: 20%;
+    border-radius: 10em;
+    /* border-radius: 50%; */
+}
+
+.emblem:hover {
+    box-shadow: 0 0 0 0.5em inset rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.emblem div {
+    color: #e6e6e6;
+    padding: 0.5em;
+}
+
+.emblem p {
+    color: white;
+}
+
+.grey-icon {
+    color: #b3b3b3;
+}
+
+.pop-up {
+    color: white;
+    width: 60rem;
+    height: 7em;
+    border-radius: 1em;
+    padding: 0.8em 2em;
+    position: absolute;
+    top: 54em;
+
+    /* changed on hover with js */
+    display: none;
+}
+
+.pop-up a {
+    letter-spacing: 0.04em;
+    text-decoration: underline;
+}
+
+.triangle {
+    border-color: transparent;
+    /* border-color: black red transparent transparent; */
+    border-style: solid;
+    border-width: 2.2em 2.3em 0 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    /* these positions are changed with js */
+    top: 0;
+    left: 0;
+} 
+
+
+
+
+/* Media queries */
+
+
+
+
+
+
+/* Helper classes */
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.no-drag {
+    /* user-drag: none; */
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
